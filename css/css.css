@@ -13,7 +13,7 @@ body{
 
 @font-face {
     font-family: "ComicRelief";
-    src: url("../Project/font/ComicRelief-Regular.woff") format("woff");
+    src: url("../font/ComicRelief-Regular.woff") format("woff");
     font-style: normal;
     font-weight: 500;
 }
@@ -1046,4 +1046,5 @@ footer{
     }
 }
 */
+
 
