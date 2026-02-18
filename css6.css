@@ -1,0 +1,97 @@
+
+@font-face {
+    font-family: "ComicRelief";
+    src: url("../Project/font/ComicRelief-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: radial-gradient(circle at top left, #ff2600, transparent 65%),
+  radial-gradient(circle at bottom right, #ff6a00, transparent 65%),
+  linear-gradient(135deg, #fdfbfb, #ebedee);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.cart-container {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+header {
+  background: transparent;
+  text-align: center;
+  padding: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffffec;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #ff3a3a96;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.remove-btn {
+  background: red;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: darkred;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.checkout-btn {
+  background: linear-gradient(135deg, #f63311, #ff416c);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background: linear-gradient(135deg, #f73220, #ffda1e);
+}
+
+.checkout-btn a{
+  text-decoration: none;
+  color: #fff;
+}

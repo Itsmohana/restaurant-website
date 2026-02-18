@@ -1,0 +1,328 @@
+@media (max-width:1042px){
+    .action_order{
+        max-width: 100%;
+    }
+    .section_search_location img{
+        max-width: 105px;
+    }
+    .content_search_location form{
+        height: 46px;
+        width: 70%;
+    }
+    .content_search_location button{
+        height: 35px;
+        top: -89%;
+        left: 80%;
+        padding: 0px 16px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:999px){
+
+    .content_search_location h6{
+    font-size: 30px;
+    }
+    .content_search_location button{
+    left: 70%;
+    } 
+
+    .section_mobile_app{
+        width: 85%;
+        height: 500px;
+    }
+    .img_section_mobile_app{
+        grid-row: 2;
+        grid-column: 1 span;
+        margin-top: 4rem;
+    }
+    .img_section_mobile_app img{
+        top: -142px;
+        max-width: 77%;
+    }
+    .content_section_mobile_app{
+        grid-column: 2 span;
+    }
+    .content_section_mobile_app h4{
+        font-size: 36px;
+    }
+    .content_section_mobile_app h6{
+        font-size: 15px;
+    }
+    .content_section_mobile_app p{
+        font-size: 13px;
+    }
+
+    .content_search_location form{
+        height: 46px;
+        width: 70%;
+    }
+    .content_search_location button{
+        height: 35px;
+        top: -89%;
+        left: 80%;
+        padding: 0px 16px;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width:982px){
+    .header_bottom{
+       margin-top: 1rem;
+    }
+    .fixed_box_delivery{
+        top: 2rem;
+        left: -3rem;
+    }
+    .content_left_header_bottom h1{
+        font-size: 43px;
+        line-height: 50px;
+    }
+    .content_left_header_bottom p{
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width:844px){
+    
+    .navigation{
+        grid-template-columns: repeat(3);
+    }
+    .content_left_header_bottom h1{
+        font-size: 43px;
+        line-height: 50px;
+    }
+
+    .order_food{
+        margin-top: 2rem;
+    }
+
+    .action_order{
+        justify-content: flex-start;
+        gap: 1.5rem;
+        width: 400px;
+    }
+
+    .button_action_order{
+        max-width: 55%;
+        padding: 5px 10px;
+        gap: 2px;
+    }
+
+    .action_order > button{
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    .fixed_box_delivery{
+        padding: 6px;
+        top: 2rem;
+        left: -2rem;
+    }
+    .fixed_box_delivery div span{
+        font-size: 19px;
+    }
+
+    .navigation > ul{
+        display: none;
+    }
+    .link_navigation{
+        justify-self: center;
+    }
+    .menu_icon{
+    justify-self:flex-start;
+    }
+/*
+    .row_grid_food_products{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+*/
+    .row_button_category{
+        width: 750px;
+        margin-left: 1rem;
+        
+    }
+
+    .row_title_section_food h4{
+        margin-left: 1.3rem;
+    }
+
+    .section_off .row_title_section_food{
+        display: flex;
+        justify-content: center;
+        margin-left: -1.5rem;
+    }
+
+    .section_search_location img{
+        max-width: 55px;
+        max-height: 46px;
+    }
+    .content_search_location button{
+        height: 35px;
+        top: -89%;
+        left:67%;
+        font-size: 12px;
+    }
+    .content_search_location form{
+        height: 45px;
+        width: 55%;
+    }
+    .content_search_location form input::placeholder{
+        font-size: 14px;
+    }
+
+    .info_site_footer{
+        grid-row: 2;
+        grid-column: 2 span;
+        justify-self: center;
+        margin-top: 2rem;
+    }
+    .grid_section_footer{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid_section_footer .link_footer:nth-child(2){
+        justify-self: center;
+    }
+
+    .section_food{
+        margin-top: 5rem;
+    }
+
+}
+@media (min-width:845px){
+    .menu_icon{
+        display: none;
+    }
+}
+
+
+@media (max-width:676px){
+    .header_bottom{
+        grid-template-columns: repeat(1,1fr);
+        width: 10px;
+        height: 10px;
+    }
+    .content_left_header_bottom{
+        width: 100%;
+        text-align: center;
+    }
+    .content_left_header_bottom p{
+        max-width: 100%;
+        margin: 1.5rem 0;
+    }
+    .order_food_desktop{
+        display: none;
+    }
+    .order_food_mobile{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fixed_box_delivery {
+        position: static;
+        width: 30%;
+    }
+    .action_order > button{
+        padding: 9px;
+    }
+    .action_order > button svg {
+        font-size: 19px;
+        margin-top: -2px;
+    }
+    .section_mobile_app{
+        max-width: 100%;
+        border-radius: 500px 500px 0 0;
+        -webkit-border-radius: 500px 500px 0 0;
+        -moz-border-radius: 500px 500px 0 0;
+        -ms-border-radius: 500px 500px 0 0;
+        -o-border-radius: 500px 500px 0 0;
+    }
+    .content_section_mobile_app{
+        margin-top: 6rem;
+        text-align: center;
+    }
+    .content_section_mobile_app p {
+        max-width: 100%;
+    }
+    .img_section_mobile_app{
+        grid-column: 2 span;
+        justify-self: center;
+    }
+    .img_section_mobile_app img{
+        top: -215px;
+        left: -180px;
+        max-width: 115px;
+        z-index: 1;
+    }
+    .content_search_location h6{
+        font-size: 20px;
+    }
+    .content_search_location p{
+        font-size: 14px;
+    }
+    .content_search_location form{
+        height: 46px;
+        width: 70%;
+    }
+    .content_search_location button{
+        height: 35px;
+        top: -89%;
+        left: 71%;
+        padding: 0px 13px;
+        font-size: 12px;
+    }
+    .content_search_location form input::placeholder{
+        font-size: 14px;
+    }
+}
+@media (min-width:677px){
+   .order_food_mobile{
+        display: none;
+   }
+}
+
+@media (max-width:550px){
+    .content_search_location{
+        height: 260px;
+        width: 70%;
+        text-align: center;
+    }
+    .section_search_location img:nth-child(4){
+        top: 9%;
+    }
+    .content_search_location form{
+        height: 35px;
+        width: 60%;
+    }
+    .content_search_location button{
+        height: 25px;
+        top: -89%;
+        left: 71%;
+        padding: 0px 8px;
+        font-size: 9px;
+    }
+    .content_search_location form input::placeholder{
+        font-size: 10px;
+    }
+    .content_search_location h6{
+        font-size: 19px;
+    }
+    .content_search_location p{
+        font-size: 12px;
+    }
+    
+ }
+
+@media (max-width:500px){
+
+    .row_grid_food_products{
+        margin-left: 2rem;
+    }
+    
+ }
+
+

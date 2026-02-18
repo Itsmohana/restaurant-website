@@ -1,0 +1,15 @@
+ul a::after{
+    content: "";
+    position: absolute;
+    background-color: #030303;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+ul a:hover::after{
+    color: #cd0000;
+}
+ul a:hover::after{
+    width: 100%;
+}

@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E3F2FD;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+}
+
+.section_accordion{
+    background-color: #fff;
+    width: 580px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    padding: 0.9rem;
+}
+
+.row_accordion{
+    padding: 0  15px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.section_accordion .row_accordion:nth-child(1){
+
+    border: 1px solid #FFD6B3;
+    background-color: #FFF7F0;
+}
+.section_accordion .row_accordion:nth-child(2){
+
+    border: 1px solid #CCEEFF;
+    background-color: #F0FAFF;
+    
+}
+.section_accordion .row_accordion:nth-child(3){
+
+    border: 1px solid #FFCCD6;
+    background-color: #FFF0F3;
+    
+}
+.section_accordion .row_accordion:nth-child(4){
+
+    border: 1px solid #CCCCFF;
+    background-color: #F0F0FF;
+    
+}
+
+.heaedr_accordion{
+    min-height: 3rem;
+    display: flex;
+    line-height: 3rem;
+    position: relative;
+    justify-content: space-between;
+}
+.heaedr_accordion span:first-child{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+}
+.content_accordion{
+    height: 0;
+    font-size: 12px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.heaedr_accordion span:last-child::before,.heaedr_accordion span:last-child::after{
+    content: '';
+    border: 1px solid #333;
+    height: 9px;
+    display: inline-block;
+}
+
+.heaedr_accordion span:last-child::after{
+    position: absolute;
+    top: 18px;
+    transform: rotate(89deg);
+    right: 0px;
+}
+.section_accordion input:checked + label + p{
+    height: 80px;
+    padding-bottom: 10px;
+}
+.section_accordion input:checked + label span:last-child::before {
+    opacity: 0;
+}
+
+@keyframes toggle_height {
+   
+    100%{
+        height: 100px;
+
+    }
+    
+}

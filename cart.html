@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="UTF-8">
+<title>Cart</title>
+<link rel="stylesheet" href="css6.css">
+</head>
+<body>
+
+<header>
+  <h1>Your Cart 🛒 </h1>
+</header>
+
+<main class="cart-container">
+  <table id="cart-table">
+    <thead>
+      <tr>
+        <th>Picture</th>
+        <th>Product name</th>
+        <th>Price</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  
+<div class="cart-total">
+    <h2> Total price: <span id="total-price">0</span>$</h2>
+    <button class="checkout-btn" id="checkout-button"><a href="checkout.html">Checkout with ZarinPal</a></button>
+</div>
+
+
+</main>
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+  const tbody = document.querySelector("#cart-table tbody");
+  const totalPriceEl = document.getElementById("total-price");
+
+  function renderCart() {
+    tbody.innerHTML = "";
+    let total = 0;
+    cart.forEach((item, index) => {
+      const row = document.createElement("tr");
+
+      const imgCell = document.createElement("td");
+      const img = document.createElement("img");
+      img.src = item.img;
+      img.alt = item.title;
+      img.width = 60;
+      imgCell.appendChild(img);
+
+      const titleCell = document.createElement("td");
+      titleCell.textContent = item.title;
+
+      const priceCell = document.createElement("td");
+      priceCell.textContent = item.price;
+      let numericPrice = parseFloat(item.price.replace('$',''));
+      total += numericPrice;
+
+      const removeCell = document.createElement("td");
+      const removeBtn = document.createElement("button");
+      removeBtn.textContent = "Delete";
+      removeBtn.classList.add("remove-btn");
+      removeBtn.addEventListener("click", () => {
+        cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        renderCart();
+      });
+      removeCell.appendChild(removeBtn);
+
+      row.appendChild(imgCell);
+      row.appendChild(titleCell);
+      row.appendChild(priceCell);
+      row.appendChild(removeCell);
+
+      tbody.appendChild(row);
+    });
+
+    totalPriceEl.textContent = total.toFixed(2);
+  }
+
+  renderCart();
+});
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
