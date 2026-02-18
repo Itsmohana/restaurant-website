@@ -1,5 +1,10 @@
 # Restaurant Website
 
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Responsive](https://img.shields.io/badge/Design-Responsive-green)
+
 A responsive multi-page restaurant website built using HTML5, CSS3, and JavaScript.
 
 ## Overview
